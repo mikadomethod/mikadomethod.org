@@ -76,7 +76,7 @@ body {
 
 .carousel-left-float {
     height: 360px;
-    float: right;
+    float: left;
     padding: 20px;
 }
 
