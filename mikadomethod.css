@@ -2,21 +2,21 @@ body {
     background: url('/mikado_game.jpg') no-repeat;
     background-size: 100%;
     background-color: #000000;
-    color: #FFFFFF;
+    color: #EEEEEE;
 
     text-align:center;
     position: absolute;
     top: 40px; /* Header Height */
-    bottom: 20px; /* Footer Height */
+    bottom: 40px; /* Footer Height */
     width: 100%;
 }
 
 .container {
-    text-align: center;
+    text-align: left;
     display: table;
     max-width: 700px;
-    background: #333333;
     height: 100%;
+    background: #111111;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
     filter: alpha(opacity=80);  /* IE 5-7 */
     -moz-opacity: 0.8;          /* Netscape */
@@ -29,3 +29,23 @@ body {
     display: table-cell;
 }
 
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+#intro {
+
+}
+
+#pitch {
+    font-weight: bold;
+
+}
+
+footer {
+    text-align: center;
+}
+
+.footer-content {
+}

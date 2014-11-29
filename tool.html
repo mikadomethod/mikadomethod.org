@@ -30,14 +30,27 @@
     <div class="container">
       <div class="content">
         <h1>The Mikado Tool</h1>
-        
+          
+        <p id="intro">Even though we prefer using pen&amp;paper for drawing the Mikado Graph, there are times when a software tool comes in handy. For distributed teams, for coding on trains, buses, planes, at airports, or when you need or want to reference stuff in cyberspace using URIs.
+        <p/>
+
         <div id="promo-and-form">
-          <p>If you are interested in the Mikado Tool for collaborative software restructuring, please fill out the form below, and we will keep you posted on the development.
+          <p id="pitch">If you want to stay updated on the development of the Mikado Tool for collaborative software restructuring, send us your email address through the form below, and we will keep you posted.
           </p>
+          
           <div id="tool-email-form">
-            <form id="ss-form" action="#" method="GET"  _lpchecked="1">
-              <input type="email" name="entry.2024811949" value="" class="ss-q-short required" id="entry_2024811949" dir="auto" aria-label="Enter you email address and we will inform you as things evolve email address Must be a valid email address" aria-required="true" required="" title="Must be a valid email address" aria-invalid="true">
-              <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+            <form class="form-horizontal" role="form" id="ss-form" action="#" method="GET"  _lpchecked="1">
+              <div class="form-group">
+                <label for="entry_2024811949" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-8">
+                  <input type="email" placeholder="Email" name="entry.2024811949" value="" class="form-control ss-q-short required" id="entry_2024811949" dir="auto" aria-label="Enter you email address and we will inform you as things evolve email address Must be a valid email address" aria-required="true" required="" title="Must be a valid email address" aria-invalid="true">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-8 ">
+                  <button type="submit" class="btn btn-default jfk-button jfk-button-action" name="submit" value="Submit" id="ss-submit" class="">Keep me updated!</button>
+                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -55,8 +68,9 @@
     
     <!-- FOOTER -->
     <footer>
-      <p class="pull-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2014 Daniel Brolund and Ola Ellnestam &middot; except illustrations &copy; 2014 Manning Publications Co.</p>
+      <div class="footer-content">
+        <p>&copy; 2014 Daniel Brolund and Ola Ellnestam</p>
+      </div>
     </footer>
     
 
