@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="mikadomethod.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -22,103 +23,51 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">The Mikado Tool</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="http://manning.com/ellnestam">The Book @ manning.com </a></li>
-              </ul>
-            </div>
+    <div class="container">
+      <div class="content">
+        <h1>The Mikado Tool</h1>
+        
+        <div id="promo-and-form">
+          <p>If you are interested in the Mikado Tool for collaborative software restructuring, please fill out the form below, and we will keep you posted on the development.
+          </p>
+          <div id="tool-email-form">
+            <form id="ss-form" action="#" method="GET"  _lpchecked="1">
+              <input type="email" name="entry.2024811949" value="" class="ss-q-short required" id="entry_2024811949" dir="auto" aria-label="Enter you email address and we will inform you as things evolve email address Must be a valid email address" aria-required="true" required="" title="Must be a valid email address" aria-invalid="true">
+              <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+            </form>
           </div>
         </div>
-
+        <div id="thank-you" style="display:none">
+          <h3>Thank You</h3>
+          <p>
+            for your interest in The Mikado Tool.
+            
+          </p>
+          
+        </div>
       </div>
     </div>
+    
+    
+    <!-- FOOTER -->
+    <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2014 Daniel Brolund and Ola Ellnestam &middot; except illustrations &copy; 2014 Manning Publications Co.</p>
+    </footer>
+    
 
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <!--ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol-->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="mikado_game.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption pull-up">
-              <h1>The Mikado Tool</h1>
-              <p>If you are interested in the Mikado Tool for collaborative software restructuring, please fill out the form below, and we will keep you posted on the development.
-              </p>
-              <div id="tool-email-form">
-              <form id="ss-form" action="#" method="GET"  _lpchecked="1">
-                <input type="email" name="entry.2024811949" value="" class="ss-q-short required" id="entry_2024811949" dir="auto" aria-label="Enter you email address and we will inform you as things evolve email address Must be a valid email address" aria-required="true" required="" title="Must be a valid email address" aria-invalid="true">
-                <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-              </form>
-              </div>
-              <!--p><a class="btn btn-lg btn-primary" href="#" role="button">Read more</a></p-->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- /.carousel -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Daniel Brolund and Ola Ellnestam &middot; except illustrations &copy; 2014 Manning Publications Co.</p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
+    
     <!-- Bootstrap core JavaScript
-    ================================================== -->
+         ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="assets/js/docs.min.js"></script>
-    <script lang="javascript" >
-            $("#ss-form").submit(
-                function(e) {
-                     e.preventDefault();
-                     $.ajax({
-                        url: 'https://docs.google.com/forms/d/1xkm5zs-eE0Uyz6kmXGChBxdcjdNlB2ib-S1CdEbA48o/formResponse',
-                        method: 'POST',
-                        dataType: 'jsonp',
-                        data: {'entry.2024811949' : $('#entry_2024811949').val()},
-                        jsonp: "mycallback"
-                     }).done(function() {
-                        console.log('Done'); 
-                        $('#tool-mail-form').append( 'THANK YOU' );
-                     }).error(function(xhr, m, e) {
-                         console.log(m, e);
-                     });
-                     return false;
-                });
+    <script src="tool.js" >
     </script>
   </body>
 </html>
