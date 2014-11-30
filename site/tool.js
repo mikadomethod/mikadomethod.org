@@ -9,8 +9,8 @@ $("#ss-form").submit(
                    'entry.769681419': $('#entry_769681419').val()},
             jsonp: "mycallback"
         });
-        $('#promo-and-form').hide();
-        $('#thank-you').show();
+        $('#promo-and-form').fadeOut();
+        $('#thank-you').fadeIn();
         
         return false;
     });
