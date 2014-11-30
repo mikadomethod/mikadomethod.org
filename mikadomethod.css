@@ -41,24 +41,10 @@ p {
     padding: 10px;
 }
 
-#short-version {
-    font-size: x-large;
-}
-
-#intro {
-
-}
-
 #pitch {
     font-weight: bold;
 }
 
-.alert-success {
-}
-
 footer {
     text-align: center;
-}
-
-.footer-content {
 }
